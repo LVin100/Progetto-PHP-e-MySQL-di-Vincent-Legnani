@@ -2,11 +2,11 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once './config/database.php';
-include_once './models/order.php';
-include_once './models/product.php';
+include_once 'config/database.php';
+include_once 'models/order.php';
+include_once 'models/product.php';
 
-var_dump($_SERVER);
+
 
 $database = new Database();
 $db = $database->getConnection();
@@ -22,8 +22,8 @@ if($num>0){
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         extract($row);
         $order_item = array(
-            "id_order"=>$id_order,
-            "kg di plastica totali"=> $kg_tot
+            "Ordine numero"=>$id_order,
+            "kg di plastica totali riciclati"=> $kg_tot
         );
         array_push($order_arr["records"], $order_item);
     }
