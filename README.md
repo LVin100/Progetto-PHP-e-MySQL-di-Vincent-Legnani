@@ -20,7 +20,7 @@ permetterà di effettuare chiamate CRUD sopracitate.
 oppure anche phpmyadmin per operare sul database contenente i prodotti (nella tabella Products) e gli ordini (nella tabella Orders).
 
 Innanzitutto avviate XAMPP e aprite i server Apache e MySQL, dopodichè aprite postman e vi lascio la legenda per fare le chiamate (per effettuare le chiamate, a meno che
-non sia la chiamata read, dovrete scrivere un json). Prima di mandare settate postman, selezionate "body", "ray" e nel menù a tendina "JSON"
+non sia la chiamata read, dovrete scrivere un json). Prima di mandare settate postman, selezionate "body", "raw" e nel menù a tendina "JSON"
 
 ultimo passo è configurare mysql e importare ("server" "data import") il file migrations.sql che contiene un database con all'interno già dei valori!
 
